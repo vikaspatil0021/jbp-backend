@@ -115,7 +115,7 @@ export const login = async (req, res) => {
 
         let new_token = jwt.sign({ id: data._id }, process.env.JWT_SECRET, { expiresIn: "24h" });
 
-        res.cookie("token", new_token, { httpOnly: true, secure: false, secure: process.env.NODE_ENV == 'production', sameSite: 'None' });
+        res.cookie("token", new_token, { httpOnly: true, secure: process.env.NODE_ENV == 'production', sameSite: 'None' });
 
         res.status(200).json({ message: "Login successful" });
     } catch (err) {
