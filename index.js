@@ -16,7 +16,7 @@ app.use(cookieParser());
 app.use(cors({
     credentials: true,
     optionSuccessStatus: 200,
-    origin: "http://localhost:3000"
+    origin: ["https://job-posting-board-liart.vercel.app", "http://localhost:3000"]
 }));
 app.use(router);
 
