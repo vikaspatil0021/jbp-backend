@@ -44,7 +44,7 @@ export const register = async (req, res) => {
                 <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
                     <h2 style="color: #4CAF50;">Welcome, ${name}!</h2>
                     <p>Thank you for signing up. Please verify your email by clicking the link below:</p>
-                    <a href="https://job-posting-board-liart.vercel.app/verify?token=${verification_token}" 
+                    <a href="https://job-posting-board-liart.vercel.app/verify?token_email=${verification_token}" 
                        style="display: inline-block; padding: 10px 20px; font-size: 16px; color: #ffffff; background-color: #4CAF50; text-decoration: none; border-radius: 5px; margin-top: 10px;">
                        Verify Email
                     </a>
