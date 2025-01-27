@@ -16,7 +16,7 @@ app.use(cookieParser());
 app.use(cors({
     credentials: true,
     optionSuccessStatus: 200,
-    origin: "https://job-posting-board-liart.vercel.app"
+    origin: "http://localhost:3000"
 }));
 app.use(router);
 
@@ -31,4 +31,4 @@ mongoose.connect(process.env.MONGO_URL)
 
 app.listen(process.env.PORT || 5000, (req, res) => {
     console.log(`Server has started on port ${process.env.PORT || 5000}`);
-})
+}) 
